@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tools for assembly web projects, Homework Lesson 1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Homework Lesson 2. Build tools.</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="title">
+          Homework Lesson 2 <br />
+          Build tools
+        </h1>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item active-nav">Timer</li>
+            <li class="nav-item">Dates calculator</li>
+          </ul>
+        </nav>
+        <div class="wrap">
+          <section class="section timer active-section">
+            <div class="block-timer-duration">
+              <form class="form-timer">
+                <label class="label">
+                  <strong>Hours:</strong>
+                  <input
+                    type="number"
+                    name="hours"
+                    id="hours"
+                    class="input-duration"
+                  />
+                </label>
+                <label class="label">
+                  <strong>Minutes:</strong>
+                  <input
+                    type="number"
+                    name="minutes"
+                    id="minutes"
+                    class="input-duration"
+                  />
+                </label>
+                <label class="label">
+                  <strong>Seconds:</strong>
+                  <input
+                    type="number"
+                    name="seconds"
+                    id="seconds"
+                    class="input-duration"
+                  />
+                </label>
+                <div class="group-button">
+                  <button class="btn btn-submit-timer" type="submit">
+                    Start
+                  </button>
+                  <button class="btn btn-reset-timer" type="button">
+                    Reset
+                  </button>
+                </div>
+              </form>
+              <p class="result-timer"></p>
+            </div>
+          </section>
+          <section class="section date-calculator">
+            <form class="form-date-calculator">
+              <label>
+                <strong>Start date:</strong>
+                <input type="date" name="firstDate" />
+              </label>
+              <label>
+                <strong>Finish date:</strong>
+                <input type="date" name="secondDate" />
+              </label>
+              <button class="btn btn-submit-date-calculator" type="submit">
+                Calculate
+              </button>
+            </form>
+            <p class="result-date-calculator"></p>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

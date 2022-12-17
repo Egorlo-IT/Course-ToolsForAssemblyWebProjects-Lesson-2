@@ -1,0 +1,181 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #323478;
+  color: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h1 {
+  font-family: "Rubik Vinyl", cursive;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: calc(2.5vmin + 17px);
+}
+
+input {
+  margin: 0 10px;
+  padding: 15px;
+  cursor: text;
+  outline: none;
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #323478;
+  font-size: 18px;
+}
+
+.input-duration {
+  width: 88px;
+  margin-left: unset;
+  padding: 5px 0;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-date {
+  font-size: 19px;
+  color: #333;
+}
+
+.value,
+.finish {
+  font-size: 23px;
+  color: #323478;
+  font-weight: 500;
+}
+
+.btn {
+  margin: 0;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #323478;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav {
+  margin-bottom: -5px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav-item {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 2px 0 -2px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #323478;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition-property: "color", "font-weight", "box-shadow", "margin";
+  transition: all ease-in-out 0.25s;
+}
+
+.active-nav {
+  color: rgb(255 0 0 / 73%);
+  box-shadow: 0 -4px 4px 0px rgb(31 33 76);
+  z-index: 1;
+}
+
+.wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.section {
+  position: absolute;
+  visibility: hidden;
+  padding: 35px 15px;
+  color: #323478;
+  opacity: 0;
+  transition: all ease-in-out 0.25s;
+}
+
+.active-section {
+  visibility: visible;
+  opacity: 1;
+}
+
+.title-section {
+  text-transform: uppercase;
+}
+
+.form-date-calculator,
+.form-timer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn-reset-timer {
+  background-color: rgb(255 0 0 / 73%);
+}
+
+.btn-reset-timer.disabled {
+  background-color: gainsboro;
+  cursor: default;
+}
+
+.msg-finish {
+  color: rgb(39, 77, 64);
+}
+
+@media (max-width: 624px) {
+  .form-date-calculator,
+  .form-timer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-date-calculator .btn-submit-date-calculator,
+  .form-timer .btn-submit-timer {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 393px) {
+  .nav-item {
+    font-size: 18px;
+    height: 45px;
+  }
+
+  .form-date-calculator label,
+  .form-timer label {
+    margin-bottom: 25px;
+  }
+}
